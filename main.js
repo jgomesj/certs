@@ -164,9 +164,9 @@ var AppRouter = Backbone.Router.extend({
     },
  
     list:function () {
-        this.wineList = new WineCollection();
-        this.wineListView = new WineListView({model:this.wineList});
-        this.wineList.fetch();
+        this.alunoList = new AlunoCollection();
+        this.alunoListView = new AlunoListView({model:this.wineList});
+        this.alunoList.fetch();
         $('#sidebar').html(this.wineListView.render().el);
     },
  
