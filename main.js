@@ -1,5 +1,20 @@
 // Models
-window.Aluno = Backbone.Model.extend();
+window.Aluno = Backbone.Model.extend({
+    urlRoot:"../aluno",
+    defaults:{
+        "id":null,
+        "nome":"",
+        "escola":"",
+        "dataNascimento":"",
+        "cursosInteresse":"",
+        "cursosFeitos":"",
+        "serie":"",
+        "turno":"",
+        "email":"",
+        "telefone":"",
+        "certificados":""
+    }
+});
  
 window.AlunoCollection = Backbone.Collection.extend({
     model:aluno,
