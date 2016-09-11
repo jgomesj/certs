@@ -1,9 +1,9 @@
 // Models
 window.Aluno = Backbone.Model.extend();
  
-window.AlunoWineCollection = Backbone.Collection.extend({
+window.AlunoCollection = Backbone.Collection.extend({
     model:aluno,
-    url:"../api/aluno"
+    url:"../aluno"
 });
  
 // Views
